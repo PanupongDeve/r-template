@@ -1,2 +1,4 @@
-export { default as View1 } from './View1';
-export { default as View2 } from './View2';
+export { default as Login } from './Login';
+export { default as Products } from './Products';
+export { default as Categories } from './Categories';
+export { default as CategoriesCreate } from './CategoriesCreate';
