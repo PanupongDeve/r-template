@@ -1,4 +1,2 @@
-export { default as Login } from './Login';
-export { default as Products } from './Products';
-export { default as Categories } from './Categories';
-export { default as CategoriesCreate } from './CategoriesCreate';
+export { default as Page1 } from './Page1';
+export { default as Page2 } from './Page2';

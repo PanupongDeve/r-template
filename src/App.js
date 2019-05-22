@@ -10,22 +10,12 @@ import configStore, { history } from "./redux/config";
 import React, { Component } from "react";
 import "./App.css";
 
-import {
-	Login,
-	Products,
-	Categories,
-	CategoriesCreate
-} from "./views";
-import {
-	firebaseRegister
-} from './service/FirebaseService/register';
+import { Page1, Page2 } from "./views";
 
 const store = configStore();
 
 class App extends Component {
-  componentWillMount() {
-	firebaseRegister.plugin();
-  }
+  componentWillMount() {}
 
   render() {
     return (
@@ -34,10 +24,8 @@ class App extends Component {
           <Router history={history}>
             <Switch>
               <div>
-                <Route exact path="/" component={Login} />
-                <Route exact path="/products" component={Products} />
-				<Route exact path="/categories" component={Categories} />
-				<Route exact path="/categories/create" component={CategoriesCreate} />
+                <Route exact path="/" component={Page1} />
+                <Route exact path="/p2" component={Page2} />
               </div>
             </Switch>
           </Router>
