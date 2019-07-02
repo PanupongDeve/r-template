@@ -10,7 +10,7 @@ import configStore, { history } from "./redux/config";
 import React, { Component } from "react";
 import "./App.css";
 
-import { Page1, Page2 } from "./views";
+import AppModule from './views/AppModule';
 
 const store = configStore();
 
@@ -20,17 +20,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
-          <Router history={history}>
-            <Switch>
-              <div>
-                <Route exact path="/" component={Page1} />
-                <Route exact path="/p2" component={Page2} />
-              </div>
-            </Switch>
-          </Router>
-          <NotificationsSystem theme={theme} />
-        </div>
+        <AppModule />
       </Provider>
     );
   }
