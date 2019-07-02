@@ -1,0 +1,26 @@
+.r-section-one {
+    display: flex;
+    flex-direction: row;
+}
+
+.hover-hand {
+    cursor: pointer;
+}
+
+.r-flex-justify-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.r-flex-justify-row-left {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: left;
+    align-content: center;
+}
+
+.r-ml-20 {
+    margin-left: 20px;
+}
